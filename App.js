@@ -12,11 +12,14 @@ export default function App() {
         <Ionicons name="ios-information-circle-outline" size={24} color="white" />
       </View>
 
-      <View>
+      <View style={styles.body}>
         <Text style={styles.text}>SEND TO:</Text>
-        <Image style={styles.image} source={require("")} />
+        <Image style={styles.image} source={require("./assets/user-avatar.png")} />
+ 
       </View>
-
+      <View>
+        
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -36,11 +39,18 @@ const styles = StyleSheet.create({
     top:40,
   },
   text: {
-    color: "white"
+    color: "white",
+  },
+  body: {
+    height:100,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center", 
+    marginTop:120
   },
   image: {
     width: 66,
     height: 58,
-    bottom: 200
+    borderRadius: 100
   }
 });
