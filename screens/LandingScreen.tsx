@@ -1,17 +1,18 @@
 import { StyleSheet,View, Text, Button, Pressable } from 'react-native'
 import React from 'react'
+import { windowHeight } from '../utils'
 
 const LandingScreen = ({navigation}) => {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <View style={{display: "flex", flexDirection: "row"}}>
-          <Pressable style={{height:50, width:200, backgroundColor:"#222222", justifyContent:"center", alignItems:"center", borderRadius:10}} 
+    <View style={{ flex: 1, alignItems: "center"}}>
+        <View style={{alignItems: "center", flexDirection: "row", justifyContent: "flex-end", marginTop:700}}>
+          <Pressable style={{height:50, width:180,right:10, backgroundColor:"#222222", justifyContent:"center", alignItems:"center", borderRadius:10}} 
         onPress={()=>{
               alert("Helllo there")
         }}>
           <Text style={{color:"white"}}>Login</Text>
         </Pressable>
-        <Pressable style={{height:50, width:200, backgroundColor:"#222222", justifyContent:"center", alignItems:"center", borderRadius:10}} 
+        <Pressable style={{height:50, width:180, left:10,backgroundColor:"#222222", justifyContent:"center", alignItems:"center", borderRadius:10}} 
         onPress={()=>{
               alert("Helllo there")
         }}>
